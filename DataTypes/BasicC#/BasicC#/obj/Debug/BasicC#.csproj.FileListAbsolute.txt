@@ -1,0 +1,7 @@
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\bin\Debug\BasicC#.exe.config
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\bin\Debug\BasicC#.exe
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\bin\Debug\BasicC#.pdb
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\obj\Debug\BasicC#.csproj.AssemblyReference.cache
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\obj\Debug\BasicC#.csproj.CoreCompileInputs.cache
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\obj\Debug\BasicC#.exe
+C:\Users\nvsin\BridgeLabz-Training-Apexon\DataTypes\BasicC#\BasicC#\obj\Debug\BasicC#.pdb
