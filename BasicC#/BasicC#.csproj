@@ -43,15 +43,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arrays\IntersectionOfTwoArrays.cs" />
+    <Compile Include="Arrays\MergeSortedArrays.cs" />
+    <Compile Include="Arrays\MissingNumber.cs" />
+    <Compile Include="Arrays\MoveAllZerosToTheEnd.cs" />
+    <Compile Include="Arrays\PairSum.cs" />
+    <Compile Include="ConditionalStatement\AQI.cs" />
+    <Compile Include="ConditionalStatement\CalculatePrice.cs" />
     <Compile Include="ConditionalStatement\CoinFlip.cs" />
+    <Compile Include="ConditionalStatement\ConvertTemperature.cs" />
+    <Compile Include="Arrays\FineOnBooks.cs" />
+    <Compile Include="ConditionalStatement\Grades.cs" />
+    <Compile Include="ConditionalStatement\LargestNumber.cs" />
     <Compile Include="ConditionalStatement\LeapYear.cs" />
+    <Compile Include="ConditionalStatement\LibrarySystem.cs" />
+    <Compile Include="ConditionalStatement\RockPaperScissors.cs" />
+    <Compile Include="Arrays\TrafficLights.cs" />
+    <Compile Include="ConditionalStatement\VowelsOrConsonant.cs" />
     <Compile Include="DataTypes\DataTypes.cs" />
     <Compile Include="ConditionalStatement\OddOrEven.cs" />
     <Compile Include="DataTypes\QuotientandRemainder.cs" />
     <Compile Include="DataTypes\SwapNumbers.cs" />
+    <Compile Include="Arrays\CouponNumbers.cs" />
+    <Compile Include="ConditionalStatement\Calculator.cs" />
     <Compile Include="Loops\Factors.cs" />
+    <Compile Include="Loops\FibonacciSeries.cs" />
     <Compile Include="Loops\HarmonicNumber.cs" />
+    <Compile Include="Loops\PerfectNumber.cs" />
     <Compile Include="Loops\PowerOfTwo.cs" />
+    <Compile Include="Loops\PrimeNumber.cs" />
+    <Compile Include="Loops\ReverseNumber.cs" />
+    <Compile Include="DataTypes\Stopwatch.cs" />
+    <Compile Include="Loops\UserAuthentication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
