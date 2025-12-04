@@ -48,6 +48,7 @@
     <Compile Include="Arrays\MissingNumber.cs" />
     <Compile Include="Arrays\MoveAllZerosToTheEnd.cs" />
     <Compile Include="Arrays\PairSum.cs" />
+    <Compile Include="Arrays\Shift2DGrid.cs" />
     <Compile Include="ConditionalStatement\AQI.cs" />
     <Compile Include="ConditionalStatement\CalculatePrice.cs" />
     <Compile Include="ConditionalStatement\CoinFlip.cs" />
@@ -77,6 +78,15 @@
     <Compile Include="Loops\UserAuthentication.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings\AnagramCheck.cs" />
+    <Compile Include="Strings\CompressString.cs" />
+    <Compile Include="Strings\KmpSearch.cs" />
+    <Compile Include="Strings\LongestPalindromeSubstring.cs" />
+    <Compile Include="Strings\LongestSubstringWithoutRepeatation.cs" />
+    <Compile Include="Strings\NonRepeatingCharacter.cs" />
+    <Compile Include="Strings\PalindromeCheck.cs" />
+    <Compile Include="Strings\ReverseString.cs" />
+    <Compile Include="Strings\RotationOfString.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
