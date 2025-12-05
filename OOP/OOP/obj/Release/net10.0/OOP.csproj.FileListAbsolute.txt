@@ -1,0 +1,15 @@
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\bin\Release\net10.0\OOP.exe
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\bin\Release\net10.0\OOP.deps.json
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\bin\Release\net10.0\OOP.runtimeconfig.json
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\bin\Release\net10.0\OOP.dll
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\bin\Release\net10.0\OOP.pdb
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.AssemblyInfoInputs.cache
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.AssemblyInfo.cs
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.csproj.CoreCompileInputs.cache
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.sourcelink.json
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.dll
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\refint\OOP.dll
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.pdb
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\OOP.genruntimeconfig.cache
+C:\Users\nvsin\BridgeLabz-Training-Apexon\OOP\OOP\obj\Release\net10.0\ref\OOP.dll
