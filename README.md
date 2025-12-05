@@ -8,3 +8,5 @@
 #### 03/12/2025: Started Arrays and solved problems related to it.
 
 #### 04/12/2025: Completed Arrays and Strings and solved problems related to them.
+
+#### 05/12/2025: Completed Constructors, Types of Constructor, Destructor, IDisposable, Garbage Collector.
