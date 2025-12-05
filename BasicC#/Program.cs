@@ -79,6 +79,30 @@ namespace BasicC_
             //Console.WriteLine(RotationOfString.isRotated("naman", "manna"));
 
             //Console.WriteLine(LongestPalindromeSubstring.longestSubstring("babad"));
+
+            //int[,] matrix = { { 100, 99, 98, 97}, { 93, 94, 95, 96 }, { 92, 91, 90, 89 }, { 85, 86, 87, 88 } };
+
+            //PrintMatrix.Print(matrix);
+
+            //RotateMatrixClockWise.rotateMatrix(matrix);
+
+            //Console.WriteLine();
+
+            //PrintMatrix.Print(matrix);
+
+            //int[,] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } };
+
+            //PrintMatrix.Print(matrix);
+
+            //Console.WriteLine();
+
+            //int[,] rotatedMatrix = RotateMatrixBy90Degree.RotateMatrix(matrix);
+
+            //PrintMatrix.Print(rotatedMatrix);
+
+            int[,] matrix = { { 1, 2, 3, 4}, { 5, 6, 7, 8 }, { 9, 10, 11, 12 } , { 13, 14, 15, 16 } };
+
+            MatrixSpiralForm.PrintSpiralForm(matrix);
             
         }
     }

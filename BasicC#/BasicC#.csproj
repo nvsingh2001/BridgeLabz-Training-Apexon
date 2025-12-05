@@ -44,11 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Arrays\IntersectionOfTwoArrays.cs" />
+    <Compile Include="Arrays\MatrixSpiralForm.cs" />
     <Compile Include="Arrays\MergeSortedArrays.cs" />
     <Compile Include="Arrays\MissingNumber.cs" />
     <Compile Include="Arrays\MoveAllZerosToTheEnd.cs" />
     <Compile Include="Arrays\PairSum.cs" />
+    <Compile Include="Arrays\PrintMatrix.cs" />
+    <Compile Include="Arrays\RotateMatrixBy90Degree.cs" />
+    <Compile Include="Arrays\RotateMatrixClockWise.cs" />
     <Compile Include="Arrays\Shift2DGrid.cs" />
+    <Compile Include="Arrays\SnakePattern.cs" />
     <Compile Include="ConditionalStatement\AQI.cs" />
     <Compile Include="ConditionalStatement\CalculatePrice.cs" />
     <Compile Include="ConditionalStatement\CoinFlip.cs" />
