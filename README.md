@@ -10,3 +10,5 @@
 #### 04/12/2025: Completed Arrays and Strings and solved problems related to them.
 
 #### 05/12/2025: Completed Constructors, Types of Constructor, Destructor, IDisposable, Garbage Collector.
+
+#### 06/12/2025: Completed Encapsulation, Abstraction, Inheritances.
