@@ -12,3 +12,5 @@
 #### 05/12/2025: Completed Constructors, Types of Constructor, Destructor, IDisposable, Garbage Collector.
 
 #### 06/12/2025: Completed Encapsulation, Abstraction, Inheritances.
+
+#### 10/12/2025: Completed Polymorphism.
