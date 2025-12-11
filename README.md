@@ -14,3 +14,5 @@
 #### 06/12/2025: Completed Encapsulation, Abstraction, Inheritances.
 
 #### 10/12/2025: Completed Polymorphism.
+
+#### 11/12/2025: Completed OOPs.
