@@ -1,7 +1,7 @@
 .vs/
 .idea/
 /ExceptionHandling/bin/
-/ExceptionHandling/Obj/
+/ExceptionHandling/obj/
 /ExceptionHandling/.idea/
 /ExceptionHandling/packages/
 /ExceptionHandling/riderModule.iml
