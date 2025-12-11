@@ -1,5 +1,5 @@
 .vs/
 .idea/
-ExceptionHandling/bin
-ExceptionHandling/Obj
-ExceptionHandling/.idea
+/ExceptionHandling/bin
+/ExceptionHandling/Obj
+/ExceptionHandling/.idea
