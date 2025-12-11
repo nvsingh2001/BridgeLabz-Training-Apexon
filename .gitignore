@@ -1,5 +1,8 @@
 .vs/
 .idea/
-/ExceptionHandling/bin
-/ExceptionHandling/Obj
-/ExceptionHandling/.idea
+/ExceptionHandling/bin/
+/ExceptionHandling/Obj/
+/ExceptionHandling/.idea/
+/ExceptionHandling/packages/
+/ExceptionHandling/riderModule.iml
+/ExceptionHandling/_ReSharper.Caches/
