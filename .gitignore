@@ -1,1 +1,5 @@
 .vs/
+.idea/
+ExceptionHandling/bin
+ExceptionHandling/Obj
+ExceptionHandling/.idea
