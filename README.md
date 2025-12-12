@@ -16,3 +16,5 @@
 #### 10/12/2025: Completed Polymorphism.
 
 #### 11/12/2025: Completed OOPs.
+
+#### 12/12/2025: Completed Exception Handling.
