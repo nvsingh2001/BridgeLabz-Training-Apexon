@@ -1,1 +1,4 @@
 .vs/
+/collections/.idea/
+/collections/bin/
+/collections/obj/
