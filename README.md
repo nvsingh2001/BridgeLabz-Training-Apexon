@@ -18,3 +18,13 @@
 #### 11/12/2025: Completed OOPs.
 
 #### 12/12/2025: Completed Exception Handling.
+
+#### 13/12/2025: Completed Employee Management Project.
+
+#### 15/12/2025: Completed Regex.
+
+#### 16/12/2025: Started Collections.
+
+#### 17/12/2025: Continuation of Collections.
+
+#### 18/12/2025: Completed Non generic collections.
