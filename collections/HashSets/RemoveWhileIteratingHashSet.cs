@@ -15,16 +15,19 @@ public class RemoveWhileIteratingHashSet
 
     public static void RemoveAllEvenWrongWay()
     {
-        try
+        List<int> toRemove = new List<int>();
+
+        foreach (var item in _hashSet)
         {
-            foreach (var item in _hashSet)
+            if (item % 2 == 0)
             {
-                _hashSet.Remove(item);
+                toRemove.Add(item);
             }
         }
-        catch (Exception e)
+
+        foreach (var item in toRemove)
         {
-            Console.WriteLine(e.Message);
+            _hashSet.Remove(item);
         }
     }
 

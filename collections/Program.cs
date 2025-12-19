@@ -5,6 +5,7 @@ using collections.HashSets;
 using collections.Hashtables;
 using collections.Lists;
 using collections.Queues;
+using collections.SortedGenericCollections;
 using collections.SortedLists;
 using collections.Stacks;
 
@@ -118,8 +119,119 @@ class Program
         //
         // DuplicateInsertionTrap.Display();
         
-        RemoveWhileIteratingHashSet.Display();
-        RemoveWhileIteratingHashSet.RemoveAllEven();
-        RemoveWhileIteratingHashSet.Display();
+        // RemoveWhileIteratingHashSet.Display();
+        // RemoveWhileIteratingHashSet.RemoveAllEven();
+        // RemoveWhileIteratingHashSet.Display();
+
+        // Lists<int> list = new Lists<int>();
+        //
+        // for (int i = 1; i <= 10; i++)
+        // {
+        //     list.Add(i);
+        // }
+        //
+        // foreach (int i in list)
+        // {
+        //     Console.WriteLine(i);
+        // }
+        // Console.WriteLine();
+        // Console.WriteLine(list.Count);
+        // Console.WriteLine();
+        // //
+        // // list.RemoveAt(9);
+        // // foreach (int i in list)
+        // // {
+        // //     Console.WriteLine(i);
+        // // }
+        // // Console.WriteLine();
+        // // Console.WriteLine(list.Count);
+        // //
+        // // Console.WriteLine();
+        // //
+        // // list.Remove();
+        // // foreach (int i in list)
+        // // {
+        // //     Console.WriteLine(i);
+        // // }
+        // // Console.WriteLine();
+        // // Console.WriteLine(list.Count);
+        //
+        // list.RemoveAt(0);
+        // foreach (int i in list)
+        // {
+        //     Console.WriteLine(i);
+        // }
+        // Console.WriteLine();
+        // Console.WriteLine(list.Count);
+        
+        // RemoveWhileIteratingHashSet.Display();
+        // Console.WriteLine();
+        // RemoveWhileIteratingHashSet.RemoveAllEven();
+        // Console.WriteLine();
+        // RemoveWhileIteratingHashSet.Display();
+        
+        // SetOperations.ComputeUnion();
+        // SetOperations.ComputeIntersect();
+        // SetOperations.ComputeDifference();
+        
+        // SetOperations.Indexer();
+        //
+        // try
+        // {
+        //     Person person1 = new Person(1, "Naman");
+        //     Person person2 = new Person(1, "Preeti");
+        //     Person person3 = new Person(2, "Preeti");
+        //     
+        //     PersonalManager.Add(person1);
+        //     PersonalManager.Add(person2);
+        //     PersonalManager.Add(person3);
+        //
+        //     PersonalManager.Display();
+        // }
+        // catch (Exception e)
+        // {
+        //     Console.WriteLine(e.Message);
+        // }
+        
+        // Console.WriteLine(LinkedLists.GetLinkedListElement(2));
+        //
+        // LinkedLists.PrintLinkedList();
+        // Console.WriteLine();
+        // LinkedLists.DeleteEvenNode();
+        // LinkedLists.PrintLinkedList();
+        //
+        // Console.WriteLine();
+        // LinkedLists.InsertNodes();
+        // LinkedLists.PrintLinkedList();
+        //
+        // SortedListProblem.PrintUsingForeachLoop();
+        // Console.WriteLine();
+        // try
+        // {
+        //     SortedListProblem.PrintUsingForLoop();
+        // }
+        // catch (Exception ex)
+        // {
+        //     Console.WriteLine(ex.Message);
+        // }
+        
+        // Console.WriteLine();
+        // SortedSetProblem.PrintSortedSet();
+        
+        SortedSetRangeOperation.PrintSortedSet();
+        Console.WriteLine();
+        SortedSetRangeOperation.GetRangeValue(3, 7);
+        Console.WriteLine();
+        SortedSetRangeOperation.RemoveValue(5);
+        SortedSetRangeOperation.PrintSortedSet();
+        Console.WriteLine();
+        
+        Console.WriteLine();
+        SortedDictionaryOperations.PrintSortedDictionary();
+        Console.WriteLine();
+        SortedDictionaryOperations.RemoveInRange(5);
+        SortedDictionaryOperations.PrintSortedDictionary();
+        Console.WriteLine();
+        
     }
 }
