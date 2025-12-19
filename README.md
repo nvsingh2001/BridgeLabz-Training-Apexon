@@ -28,3 +28,5 @@
 #### 17/12/2025: Continuation of Collections.
 
 #### 18/12/2025: Completed Non generic collections.
+
+#### 19/12/2025: Completed Collections.
