@@ -30,3 +30,5 @@
 #### 18/12/2025: Completed Non generic collections.
 
 #### 19/12/2025: Completed Collections.
+
+#### 20/12/2025: Completed Linq.
