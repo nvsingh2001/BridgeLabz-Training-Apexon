@@ -2,7 +2,8 @@ using System.Collections;
 
 namespace collections.Stacks;
 
-public class MixedStackPopTrap
+using collections;
+public class MixedStackPopTrap 
 {
     static Stack stack = new Stack();
 

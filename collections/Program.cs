@@ -218,20 +218,33 @@ class Program
         // Console.WriteLine();
         // SortedSetProblem.PrintSortedSet();
         
-        SortedSetRangeOperation.PrintSortedSet();
-        Console.WriteLine();
-        SortedSetRangeOperation.GetRangeValue(3, 7);
-        Console.WriteLine();
-        SortedSetRangeOperation.RemoveValue(5);
-        SortedSetRangeOperation.PrintSortedSet();
-        Console.WriteLine();
+        // SortedSetRangeOperation.PrintSortedSet();
+        // Console.WriteLine();
+        // SortedSetRangeOperation.GetRangeValue(3, 7);
+        // Console.WriteLine();
+        // SortedSetRangeOperation.RemoveValue(5);
+        // SortedSetRangeOperation.PrintSortedSet();
+        // Console.WriteLine();
+        //
+        // Console.WriteLine();
+        // SortedDictionaryOperations.PrintSortedDictionary();
+        // Console.WriteLine();
+        // SortedDictionaryOperations.RemoveInRange(5);
+        // SortedDictionaryOperations.PrintSortedDictionary();
+        // Console.WriteLine();
         
-        Console.WriteLine();
-        SortedDictionaryOperations.PrintSortedDictionary();
-        Console.WriteLine();
-        SortedDictionaryOperations.RemoveInRange(5);
-        SortedDictionaryOperations.PrintSortedDictionary();
-        Console.WriteLine();
-        
+        var table = new HashTable();
+
+        table.Put("name", "Naman");
+        table.Put("age", 23);
+        table.Put("city", "Delhi");
+
+        Console.WriteLine(table.Get("name")); // Naman
+        Console.WriteLine(table.Get("age"));  // 23
+
+        table.Remove("age");
+        Console.WriteLine(table.Get("age"));  // null
+
+        SafeLookupVsCrash.Run();
     }
 }
