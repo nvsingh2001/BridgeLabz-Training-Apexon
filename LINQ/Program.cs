@@ -29,8 +29,8 @@ class Program
             new Employee(10, "Pooja", "IT", 40000, new DateTime(2019, 5, 25)),
             new Employee(2, "Gourav", "IT", 25000, new DateTime(2024, 3, 1)),
         };
+        
         // Console.WriteLine(string.Join(Environment.NewLine, employees));
-        //
         // // How can you use a lambda expression in LINQ to filter employees who joined in the last six months and belong to a specific department?
         // var result1 = employees.Where(L => L.JoiningDate >= DateTime.Now.AddMonths(-6) 
         //                                    && L.Department == "IT");
