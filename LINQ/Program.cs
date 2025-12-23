@@ -1,6 +1,12 @@
 ﻿// using LINQ.LinqOperators;
 // using LINQ.MethodAndQuerySyntax;
 
+using System.Diagnostics.Metrics;
+using System.Reflection;
+using LINQ.Closures;
+using LINQ.Delegates;
+using LINQ.LambdaExpressions;
+
 namespace LINQ;
 
 class Program
@@ -43,89 +49,166 @@ class Program
         // Console.WriteLine("Results 2: sort a list of strings based on their length in ascending order?");
         // Console.WriteLine(string.Join(Environment.NewLine, employees.OrderBy(emp => emp.Name.Length)));
         
-        List<Product> products = new()
+        // List<Product> products = new()
+        // {
+        //     new Product(1, "Laptop", "Electronics", 75000),
+        //     new Product(2, "Smartphone", "Electronics", 45000),
+        //     new Product(3, "Headphones", "Electronics", 3000),
+        //
+        //     new Product(4, "Office Chair", "Furniture", 12000),
+        //     new Product(5, "Desk", "Furniture", 18000),
+        //     new Product(6, "Bookshelf", "Furniture", 9000),
+        //
+        //     new Product(7, "T-Shirt", "Clothing", 1200),
+        //     new Product(8, "Jeans", "Clothing", 2500),
+        //     new Product(9, "Jacket", "Clothing", 5000),
+        //
+        //     new Product(10, "Coffee Maker", "Appliances", 4000),
+        //     new Product(11, "Microwave", "Appliances", 15000),
+        //     new Product(12, "Toaster", "Appliances", 2500)
+        // };
+        //
+        // Console.WriteLine(string.Join(Environment.NewLine, products));
+        //
+        // // How can LINQ be used to group a list of products by category and calculate the average price for each category?
+        // var result3 = products.GroupBy(product => product.Category).Select(group => new
+        // {
+        //     Category = group.Key,
+        //     AveragePrice = group.Average(product => product.Price),
+        // });
+        // Console.WriteLine();
+        // Console.WriteLine("Result 3: ");
+        // Console.WriteLine(string.Join(Environment.NewLine, result3));
+        //
+        // // How do you find employees whose salary is greater than the average salary using LINQ? 
+        // var result4 = employees.Where(emp => emp.Salary > employees.Average(employee => employee.Salary));
+        //
+        // Console.WriteLine();
+        // Console.WriteLine("Result 4: employees whose salary is greater than the average salary");
+        // Console.WriteLine(string.Join(Environment.NewLine, result4));
+        //
+        // // How can you retrieve the top three highest-paid employees using LINQ?
+        // var result5 = employees.OrderByDescending(emp => emp.Salary).Take(3);
+        // Console.WriteLine();
+        // Console.WriteLine("Result 5: top three highest-paid employees");
+        // Console.WriteLine(string.Join(Environment.NewLine, result5));
+        //
+        // //How do you count the number of employees in each department using LINQ?
+        // var result6 = employees.GroupBy(emp => emp.Department).Select(group => new
+        //     {
+        //         Department = group.Key,
+        //         Count = group.Count()
+        //     }
+        // );
+        //
+        // Console.WriteLine();
+        // Console.WriteLine("Result 6: number of employees in each department");
+        // Console.WriteLine(string.Join(Environment.NewLine, result6));
+        //
+        // // How can you use LINQ to convert all employee names to uppercase 
+        // var result7 = employees.Select(emp => emp.Name.ToUpper()).ToList();
+        // Console.WriteLine();
+        // Console.WriteLine("Result 7: convert all employee names to uppercase");
+        // Console.WriteLine(string.Join(Environment.NewLine, result7));
+        //
+        // // How do you filter products whose prices fall between a specific range using LINQ?
+        // var result8 = products.Where(product => product.Price is > 5000 and < 20000).ToList();
+        // Console.WriteLine();
+        // Console.WriteLine("Result 8: products whose prices fall between a specific range");
+        // Console.WriteLine(string.Join(Environment.NewLine, result8));
+        //
+        // // How can you perform an inner join between Employees and Departments using LINQ and lambda expressions?
+        // Console.WriteLine();
+        // Console.WriteLine("Result 9: inner join between Employees and Departments");
+        // var departments = new[]
+        // {
+        //     new { DeptName = "IT", Location = "Building A" },
+        //     new { DeptName = "HR", Location = "Building B" },
+        //     new { DeptName = "Finance", Location = "Building C" }
+        // };
+        // var joined = employees
+        //     .Join(departments,
+        //         emp => emp.Department,
+        //         dept => dept.DeptName,
+        //         (emp, dept) => new { emp.Name, emp.Salary, dept.DeptName, dept.Location});
+        // foreach (var item in joined)
+        //     Console.WriteLine($"{item.Name} ({item.Salary:C}) works in {item.DeptName} located at {item.Location}");
+
+        // DelegatesExample.Run();
+        // MultiCastDelegates.Run();
+        // ReturnDelegates.Run();
+
+        // LambdaExpressionsDemo.Run();
+
+        // UserDefinedLE.Run();
+        
+        // Predicates.Run();
+        
+        // AnonymousMethodDemo.Run();
+        
+        // ActionDelegateDemo.Demo();
+        
+        // FuncDelegatesDemo.Run();
+
+        // Events process = new Events();
+        //
+        // process.ProcessCompleted += ProcessCompletedHandler;
+        //
+        // process.Start();
+        
+        // TaskManager manager = new TaskManager();
+        // manager.TaskCompleted += Manager_TaskCompleted;
+        //
+        // manager.RunTask();
+
+        
+        // Downloader downloader = new Downloader();
+        // downloader.DownloadCompleted += Downloader_DownloadCompleted;
+        //
+        // downloader.Download("exmaple.txt");
+
+        // Counter.Run();
+
+        Assembly executingAssembly = Assembly.GetExecutingAssembly();
+        
+        Type[] types = executingAssembly.GetTypes();
+        foreach (var type in types)
         {
-            new Product(1, "Laptop", "Electronics", 75000),
-            new Product(2, "Smartphone", "Electronics", 45000),
-            new Product(3, "Headphones", "Electronics", 3000),
-
-            new Product(4, "Office Chair", "Furniture", 12000),
-            new Product(5, "Desk", "Furniture", 18000),
-            new Product(6, "Bookshelf", "Furniture", 9000),
-
-            new Product(7, "T-Shirt", "Clothing", 1200),
-            new Product(8, "Jeans", "Clothing", 2500),
-            new Product(9, "Jacket", "Clothing", 5000),
-
-            new Product(10, "Coffee Maker", "Appliances", 4000),
-            new Product(11, "Microwave", "Appliances", 15000),
-            new Product(12, "Toaster", "Appliances", 2500)
-        };
-        
-        Console.WriteLine(string.Join(Environment.NewLine, products));
-        
-        // How can LINQ be used to group a list of products by category and calculate the average price for each category?
-        var result3 = products.GroupBy(product => product.Category).Select(group => new
-        {
-            Category = group.Key,
-            AveragePrice = group.Average(product => product.Price),
-        });
-        Console.WriteLine();
-        Console.WriteLine("Result 3: ");
-        Console.WriteLine(string.Join(Environment.NewLine, result3));
-        
-        // How do you find employees whose salary is greater than the average salary using LINQ? 
-        var result4 = employees.Where(emp => emp.Salary > employees.Average(employee => employee.Salary));
-        
-        Console.WriteLine();
-        Console.WriteLine("Result 4: employees whose salary is greater than the average salary");
-        Console.WriteLine(string.Join(Environment.NewLine, result4));
-        
-        // How can you retrieve the top three highest-paid employees using LINQ?
-        var result5 = employees.OrderByDescending(emp => emp.Salary).Take(3);
-        Console.WriteLine();
-        Console.WriteLine("Result 5: top three highest-paid employees");
-        Console.WriteLine(string.Join(Environment.NewLine, result5));
-        
-        //How do you count the number of employees in each department using LINQ?
-        var result6 = employees.GroupBy(emp => emp.Department).Select(group => new
+            Console.WriteLine("Class: {0}, Namespace: {1}, IsAbstract: {2}, IsPublic: {3}", type.Name, type.Namespace, type.IsAbstract, type.IsPublic);
+            
+            MethodInfo[] methods = type.GetMethods();
+            foreach (var method in methods)
             {
-                Department = group.Key,
-                Count = group.Count()
+                Console.WriteLine("Method: {0}, ReturnType: {1}, IsPrivate: {2}, IsStatic: {3}", method.Name, method.ReturnType, method.IsPrivate, method.IsStatic);
+                
+                ParameterInfo[] parameters = method.GetParameters();
+
+                foreach (var parameter in parameters)
+                {
+                    Console.WriteLine("-------------->Parameter: {0}, Type:  {1}", parameter.Name,  parameter.ParameterType);
+                }
             }
-        );
-        
-        Console.WriteLine();
-        Console.WriteLine("Result 6: number of employees in each department");
-        Console.WriteLine(string.Join(Environment.NewLine, result6));
-        
-        // How can you use LINQ to convert all employee names to uppercase 
-        var result7 = employees.Select(emp => emp.Name.ToUpper()).ToList();
-        Console.WriteLine();
-        Console.WriteLine("Result 7: convert all employee names to uppercase");
-        Console.WriteLine(string.Join(Environment.NewLine, result7));
-        
-        // How do you filter products whose prices fall between a specific range using LINQ?
-        var result8 = products.Where(product => product.Price is > 5000 and < 20000).ToList();
-        Console.WriteLine();
-        Console.WriteLine("Result 8: products whose prices fall between a specific range");
-        Console.WriteLine(string.Join(Environment.NewLine, result8));
-        
-        // How can you perform an inner join between Employees and Departments using LINQ and lambda expressions?
-        Console.WriteLine();
-        Console.WriteLine("Result 9: inner join between Employees and Departments");
-        var departments = new[]
-        {
-            new { DeptName = "IT", Location = "Building A" },
-            new { DeptName = "HR", Location = "Building B" },
-            new { DeptName = "Finance", Location = "Building C" }
-        };
-        var joined = employees
-            .Join(departments,
-                emp => emp.Department,
-                dept => dept.DeptName,
-                (emp, dept) => new { emp.Name, emp.Salary, dept.DeptName, dept.Location});
-        foreach (var item in joined)
-            Console.WriteLine($"{item.Name} ({item.Salary:C}) works in {item.DeptName} located at {item.Location}");
+        }
+
+        Type t = typeof(Object);
+        Console.WriteLine(t.Name);
+        Console.WriteLine(t.Namespace);
+        Console.WriteLine(t.FullName);
+        Console.WriteLine(t.AssemblyQualifiedName);
     }
+
+    // static void Downloader_DownloadCompleted(object sender, DownloadEventArgs e)
+    // {
+    //     Console.WriteLine($"Download Finished: {e.FileName}");
+    // }
+
+    // static void Manager_TaskCompleted(Object sender, EventArgs e)
+    // {
+    //     Console.WriteLine("Task Completed Even Fired!");
+    // }
+
+    // static void ProcessCompletedHandler()
+    // {
+    //     Console.WriteLine("Process Completed!");
+    // }
 }
