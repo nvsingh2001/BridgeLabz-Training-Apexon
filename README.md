@@ -33,4 +33,6 @@
 
 #### 20/12/2025: Completed Linq.
 
-#### 27/12/2020: Completed NUnit.
+#### 27/12/2025: Completed NUnit.
+
+#### 29/12/2025: Completed Design Patterns.
