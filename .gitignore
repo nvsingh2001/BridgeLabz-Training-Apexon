@@ -1,1 +1,6 @@
 .vs/
+.idea/
+/Multithreading/.idea/
+/Multithreading/bin/
+/Multithreading/obj/
+
