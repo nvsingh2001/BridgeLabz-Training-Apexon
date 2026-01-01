@@ -36,3 +36,5 @@
 #### 27/12/2025: Completed NUnit.
 
 #### 29/12/2025: Completed Design Patterns.
+
+#### 01/01/2026: Completed Multithreading.
