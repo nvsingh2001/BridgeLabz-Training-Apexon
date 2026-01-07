@@ -38,3 +38,5 @@
 #### 29/12/2025: Completed Design Patterns.
 
 #### 01/01/2026: Completed Multithreading.
+
+#### 07/01/2026: Completed ADO.NET.
